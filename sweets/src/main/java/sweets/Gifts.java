@@ -18,6 +18,9 @@ public class Gifts {
 		s.add(new Candy("DoubleBubbleGum",5,3.0f,15));
 		List<Sweets> ch=new ArrayList<>();
 		int n=s.size();
+		float tw=0.0f;
+		for(int i=0;i<n;i++) tw+=s.get(i).weight;
+		System.out.println("Total Weight of Gift is : "+tw);
 		for(int i=0;i<n;i++) {
 			if(s.get(i) instanceof Chocolate) ch.add(s.get(i));
 		}
